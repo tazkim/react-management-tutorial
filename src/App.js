@@ -1,16 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Customer from './componenets/Customer';
+
+
+
+const student = {
+  'name' : 'jini',
+  'age' : '3',
+  'addr' : 'seoul',
+}
+
+
+
 
 function App() {
   return (
-    <div className="
-    
-    ">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       <h2>Let's develop</h2>
-      </header>
-    </div>
+    <Customer name={student.name} age= {student.age} />
   );
 }
 
